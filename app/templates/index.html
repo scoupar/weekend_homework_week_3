@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <head>
+        <h1>Rock, Paper, Scissors</h1>
+    </head>
+    
+    <div class="container">
+    {% if winner == "Rock wins!"%}
+        <h2>{{player1.name}} has chosen <span>{{player1.choice}}</span>!</h2>
+        <img src="https://davewritescode.com/wp-content/uploads/2019/10/20170815-rock-scissors-pixabay-34f3h8kx0ucail5dbcp8n4-1024x607.jpg">
+        <h2>{{player2.name}} has chosen <span>{{player2.choice}}</span>!</h2>
+        <h1>{{winner}}!!!</h1>
+    {% endif %}
+    {% if winner == "Paper wins!"%}
+        <h2>{{player1.name}} has chosen <span>{{player1.choice}}</span>!</h2>
+        <img src="https://cdn.iflscience.com/images/aa817def-a3b8-5a11-928b-6f7285ca3234/default-1464361178-700-how-to-win-at-rock-paper-scissors-with-science.jpg">
+        <h2>{{player2.name}} has chosen <span>{{player2.choice}}</span>!</h2>
+        <h1>{{winner}}!!!</h1>
+    {% endif %}
+    {% if winner == "Scissors wins!"%}
+        <h2>{{player1.name}} has chosen <span>{{player1.choice}}</span>!</h2>
+        <img src="https://cdn.theatlantic.com/thumbor/OOkUufd7c49bmOgbK9jXwgvGqz4=/0x190:3420x2114/720x405/media/img/mt/2015/12/RTR1J9GG/original.jpg">
+        <h2>{{player2.name}} has chosen <span>{{player2.choice}}</span>!</h2>
+        <h1>{{winner}}!!!</h1>
+    {% endif %}
+    {% if player1.choice == player2.choice %}
+        <h2>{{player1.name}} has chosen <span>{{player1.choice}}</span>!</h2>
+        <h2>{{player2.name}} has chosen <span>{{player2.choice}}!</span></h2>
+        <h1>{{winner}}!!!</h1>
+        <img src="https://i0.wp.com/www.teampedia.net/wiki/images/0/0b/Rock.png">
+    {% endif %}
+        
+    </div>
+</body>
+</html>
+
