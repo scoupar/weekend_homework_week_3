@@ -3,7 +3,7 @@ body{
 }
 h1{
     text-align:center;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy', sans-serif;
 }
 
 h2{
@@ -20,6 +20,33 @@ h2{
 }
 
 span{
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy', sans-serif;
 }
 
+#button{
+    font-family: 'Luckiest Guy', sans-serif;
+    background-color: #030f03;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:10%;
+    font-size: 25px;
+    
+}
+
+#button:hover{
+    background-color:rgb(124, 209, 121);
+}
+
+#home{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%; 
+
+}
